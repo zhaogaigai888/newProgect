@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        html,
+        body,
+        .wrap {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .wrap {
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+        
+        header {
+            background: red;
+            height: 3rem;
+        }
+        
+        main {
+            -webkit-box-flex: 1;
+        }
+        
+        footer {
+            background: red;
+            height: 3rem;
+        }
+        
+        @media screen and (min-width:500px) {
+            .wrap {
+                width: 500px;
+                margin: auto;
+                background: #ccc;
+                font-size: 16px;
+            }
+            header {
+                height: 60px;
+            }
+            footer {
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <header>头部</header>
+        <main>主体</main>
+        <footer>
+            底部
+        </footer>
+    </div>
+    <script src="../js/fontSize.js"></script>
+</body>
+
+</html>
